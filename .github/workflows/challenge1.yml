@@ -1,1 +1,26 @@
+# Requirements
+# 1. Add a github workflow file from scratch
+# 2.	Push should trigger the workflow
+# 3.	4 jobs in the workflow
+# 4.	Each workflow prints the current date
+# 5.	Job 1 uses the ubuntu
+# 6.	Job 2 uses the windows
+# 7.	Job 3 uses the macOS
+# 8.	Job 4 should be dependend on 1,2,3 jobs
 
+name: challenge1
+on : push
+jobs:
+    job1:
+      name: First Job 
+      runs-on: ubuntu-latest
+    job2:
+      name: Second Job 
+      runs-on: windows-latest
+    job3:
+      name: Third Job 
+      runs-on: macoS-latest
+    job4:
+      name: Fourth Job 
+      runs-on: ubuntu-latest
+      
