@@ -21,7 +21,7 @@ jobs:
         run: date
     job2:
       name: Second Job
-      runs-on: window-latest
+      runs-on: windows-latest
       steps:
       - name: step1
         run: date /t
